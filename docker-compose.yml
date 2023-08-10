@@ -1,0 +1,66 @@
+# Версия docker-compose
+version: '3.8'
+# Список наших сервисов (контейнеров)
+
+networks:
+  default:
+    external: true
+    name: gateway
+#  dev0:
+#    internal: true
+
+services:
+  nginx:
+    labels:
+      traefik.enable: "true"
+      traefik.http.services.kouriakova_nginx-80.loadbalancer.server.port: "80"
+      traefik.http.routers.kouriakova_nginx.entrypoints: "web"
+      traefik.http.routers.kouriakova_nginx.rule: "Host(`kouriakova.localhost`)"
+    container_name: kouriakova_nginx
+    hostname: kouriakova_nginx
+    # используем последний стабильный образ nginx
+    image: nginx:latest
+    depends_on:
+      - php
+    #    ports:
+    #      - '80:80'
+    # монтируем директории, слева директории на основной машине, справа - куда они монтируются в контейнере
+    volumes:
+      - ./hosts:/etc/nginx/conf.d
+      - ./www:/var/www
+      - ./logs:/var/log/nginx
+    # nginx должен общаться с php контейнером
+    links:
+      - php
+    networks:
+      - default
+  #      - dev0
+  php:
+    container_name: kouriakova_php
+    # у нас свой образ для PHP, указываем путь к нему и говорим что его надо собрать
+    build: ./images/php
+    # монтируем директорию с проектами
+    volumes:
+      - ./www:/var/www
+      - ./images/php/:/usr/local/etc/php/custom.d
+    environment:
+      - PHP_IDE_CONFIG=serverName=kouriakova
+      - PHP_INI_SCAN_DIR=/usr/local/etc/php/custom.d:/usr/local/etc/php/conf.d
+    depends_on:
+      - postgresql
+    networks:
+      - default
+  postgresql:
+    image: 'bitnami/postgresql:latest'
+    container_name: kouriakova_postgres
+    environment:
+      - POSTGRESQL_USERNAME=kouriakova
+      - POSTGRESQL_PASSWORD=kouriakova
+      - POSTGRESQL_DATABASE=kouriakova_db
+    ports:
+      - 5533:5432
+    volumes:
+      - /var/lib/postgresql/data
+    networks:
+      - default
+#      - dev0
