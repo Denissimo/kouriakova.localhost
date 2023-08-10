@@ -1,0 +1,4 @@
+cat_get:
+  path: /
+  methods: GET
+  controller: App\Controller\MainController::index
