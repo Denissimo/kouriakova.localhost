@@ -23,7 +23,7 @@
   --brote-gray-rgb: 123, 125, 131;
   --brote-white: #ffffff;
   --brote-white-rgb: 255, 255, 255;
-  --brote-base: #1239ac;
+  --brote-base: #ac3990;
   --brote-base-rgb: 18, 57, 172;
   --brote-primary: #ffb400;
   --brote-primary-rgb: 255, 180, 0;
@@ -1552,7 +1552,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0a2e99;
+  background-color: #992e70;
   padding: 12.5px 30px;
 }
 
@@ -3888,7 +3888,7 @@ ul {
   left: 0;
   content: "";
   border-top: 10px solid transparent;
-  border-right: 10px solid #0a2e99;
+  border-right: 10px solid #992e70;
   border-bottom: 0px solid transparent;
 }
 
@@ -3898,7 +3898,7 @@ ul {
   right: -10px;
   content: "";
   border-top: 0px solid transparent;
-  border-left: 10px solid #0a2e99;
+  border-left: 10px solid #992e70;
   border-bottom: 11px solid transparent;
 }
 
@@ -4766,7 +4766,7 @@ ul {
   left: -14px;
   content: "";
   border-top: 17px solid transparent;
-  border-right: 14px solid #0a2e99;
+  border-right: 14px solid #992e70;
   border-bottom: 0px solid transparent;
 }
 
@@ -4889,7 +4889,7 @@ ul {
   position: relative;
   display: block;
   border-radius: 10px;
-  background-color: #0a2e99;
+  background-color: #992e70;
   -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 72px 0px 73px;
@@ -5159,7 +5159,7 @@ ul {
   text-align: center;
   color: var(--brote-white);
   font-size: 15px;
-  background-color: #0a2e99;
+  background-color: #992e70;
   border-radius: 50%;
   overflow: hidden;
   -webkit-transition: all 500ms ease;
@@ -5441,7 +5441,7 @@ ul {
 .site-footer__bottom {
   position: relative;
   display: block;
-  background-color: #0a2e99;
+  background-color: #992e70;
 }
 
 .site-footer__bottom-inner {
@@ -6858,7 +6858,7 @@ ul {
 .call-one__call-number a i {
   height: 53px;
   width: 53px;
-  background-color: #0a2e99;
+  background-color: #992e70;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10190,13 +10190,13 @@ ul {
   top: -20px;
   left: 0;
   border-top: 20px solid transparent;
-  border-right: 20px solid #0a2e99;
+  border-right: 20px solid #992e70;
   border-bottom: 0px solid transparent;
 }
 
 .team-page .team-one__sub-title-box:after {
   right: -20px;
-  border-left: 20px solid #0a2e99;
+  border-left: 20px solid #992e70;
   border-bottom: 21px solid transparent;
 }
 
@@ -11660,7 +11660,7 @@ ul {
   left: -50px;
   bottom: 180px;
   border-radius: 50%;
-  background-color: #1239ac;
+  background-color: #ac3990;
   width: 26px;
   height: 26px;
 }
@@ -11765,13 +11765,13 @@ ul {
   top: -20px;
   left: 0;
   border-top: 20px solid transparent;
-  border-right: 20px solid #0a2e99;
+  border-right: 20px solid #992e70;
   border-bottom: 0px solid transparent;
 }
 
 .about-team-page .team-one__sub-title-box:after {
   right: -20px;
-  border-left: 20px solid #0a2e99;
+  border-left: 20px solid #992e70;
   border-bottom: 21px solid transparent;
 }
 

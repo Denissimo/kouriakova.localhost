@@ -15,12 +15,12 @@
 .faq-one-accrodion .accrodion,
 .testimonial-one__single,
 .main-header__top-details {
-  background-color: #1239ac;
+  background-color: #ac3990;
 }
 
 .feature-three__single,
 .faq-one-accrodion .accrodion {
-  border-color: #1239ac;
+  border-color: #ac3990;
 }
 
 body,
@@ -106,16 +106,16 @@ body.boxed-wrapper .page-wrapper,
 }
 
 .welcome-one__btn {
-  color: #1239ac;
+  color: #ac3990;
 }
 
 .main-slider .swiper-slide {
-  background-color: #0a2e99;
+  background-color: #992e70;
 }
 
 .main-slider .image-layer:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0a2e99), to(rgba(10, 46, 153, 0)));
-  background-image: linear-gradient(90deg, #0a2e99 0%, rgba(10, 46, 153, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#992e70), to(rgba(10, 46, 153, 0)));
+  background-image: linear-gradient(90deg, #992e70 0%, rgba(10, 46, 153, 0) 100%);
 }
 
 .main-slider-bubble-bg {
@@ -152,7 +152,7 @@ body.boxed-wrapper .page-wrapper,
 .blog-two:before,
 .services-three,
 .team-one {
-  background-color: #0a2e99;
+  background-color: #992e70;
 }
 
 .team-one__shape-bg {
