@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\ArticleUnit;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\NonUniqueResultException;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -19,6 +20,20 @@ class ArticleUnitRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, ArticleUnit::class);
+    }
+
+    /**
+     * @return ArticleUnit
+     * @throws NonUniqueResultException
+     */
+    public function findByPath(string $path): array
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.path = :val')
+            ->setParameter('val', $path)
+            ->getQuery()
+            ->getOneOrNullResult()
+        ;
     }
 
 //    /**

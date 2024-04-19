@@ -1,0 +1,3 @@
+article_unit_show:
+  path: /psychology/{path}
+  controller: App\Controller\ArticleUnitController::showArticleUnit

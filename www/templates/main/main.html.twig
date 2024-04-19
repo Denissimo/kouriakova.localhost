@@ -1,0 +1,446 @@
+{% extends 'base.html.twig' %}
+
+{#{% block title %}Hello ++ MainController!{% endblock %}#}
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+
+    <div class="page-wrapper">
+        <header class="main-header clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-social-box">
+                    <div class="container">
+                        <div class="main-header__top-social-box-inner">
+                            <p class="main-header__top-social-text">Психолог Елена Сварич</p>
+                            <div class="main-header__top-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header__top-details">
+                    <div class="container">
+                        <div class="main-header__top-details-inner">
+                            <div class="main-header__logo">
+                                <a href="/"><img src="assets/images/resources/logo-1.png" alt=""></a>
+                            </div>
+                            <ul class="list-unstyled main-header__top-details-list">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-message"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h5><a href="mailto:easvarich@gmail.com">easvarich@gmail.com</a></h5>
+                                        <p>Написать</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-time"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Вторник - Воскресенье</h5>
+                                        <p>11:00 - 17:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-phone-call"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Звоните</h5>
+                                        <p><a href="tel:+79067743932">+7(906)774-3932</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-location"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h5>ул. Татьяны Макаровой, д. 3</h5>
+                                        <p>Москва</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu__wrapper clearfix">
+                    <div class="container">
+                        <div class="main-menu__wrapper-inner clearfix">
+                            <div class="main-menu__left">
+                                <div class="main-menu__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li class="dropdown current megamenu">
+                                            <a href="/">Home </a>
+                                            <ul>
+                                                <li>
+                                                    <section class="home-showcase">
+                                                        <div class="container">
+                                                            <div class="home-showcase__inner">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3">
+                                                                        <div class="home-showcase__item">
+                                                                            <div class="home-showcase__image">
+                                                                                <img src="assets/images/home-showcase/home-showcase-1-1.jpg"
+                                                                                     alt="">
+                                                                                <div class="home-showcase__buttons">
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">Multi
+                                                                                        Page</a>
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">One
+                                                                                        Page</a>
+                                                                                </div><!-- /.home-showcase__buttons -->
+                                                                            </div><!-- /.home-showcase__image -->
+                                                                            <h3 class="home-showcase__title">Home Page
+                                                                                01
+                                                                            </h3><!-- /.home-showcase__title -->
+                                                                        </div><!-- /.home-showcase__item -->
+                                                                    </div><!-- /.col-lg-3 -->
+                                                                    <div class="col-lg-3">
+                                                                        <div class="home-showcase__item">
+                                                                            <div class="home-showcase__image">
+                                                                                <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
+                                                                                     alt="">
+                                                                                <div class="home-showcase__buttons">
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">Multi
+                                                                                        Page</a>
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">One
+                                                                                        Page</a>
+                                                                                </div><!-- /.home-showcase__buttons -->
+                                                                            </div><!-- /.home-showcase__image -->
+                                                                            <h3 class="home-showcase__title">Home Page
+                                                                                02
+                                                                            </h3><!-- /.home-showcase__title -->
+                                                                        </div><!-- /.home-showcase__item -->
+                                                                    </div><!-- /.col-lg-3 -->
+                                                                    <div class="col-lg-3">
+                                                                        <div class="home-showcase__item">
+                                                                            <div class="home-showcase__image">
+                                                                                <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
+                                                                                     alt="">
+                                                                                <div class="home-showcase__buttons">
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">Multi
+                                                                                        Page</a>
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">One
+                                                                                        Page</a>
+                                                                                </div><!-- /.home-showcase__buttons -->
+                                                                            </div><!-- /.home-showcase__image -->
+                                                                            <h3 class="home-showcase__title">Home Page
+                                                                                03
+                                                                            </h3><!-- /.home-showcase__title -->
+                                                                        </div><!-- /.home-showcase__item -->
+                                                                    </div><!-- /.col-lg-3 -->
+                                                                    <div class="col-lg-3">
+                                                                        <div class="home-showcase__item">
+                                                                            <div class="home-showcase__image">
+                                                                                <img src="assets/images/home-showcase/home-showcase-1-4.jpg"
+                                                                                     alt="">
+                                                                                <div class="home-showcase__buttons">
+                                                                                    <a href="/"
+                                                                                       class="thm-btn home-showcase__buttons__item">View
+                                                                                        Page</a>
+                                                                                </div><!-- /.home-showcase__buttons -->
+                                                                            </div><!-- /.home-showcase__image -->
+                                                                            <h3 class="home-showcase__title">Home Dark
+                                                                            </h3><!-- /.home-showcase__title -->
+                                                                        </div><!-- /.home-showcase__item -->
+                                                                    </div><!-- /.col-lg-3 -->
+                                                                </div><!-- /.row -->
+                                                            </div><!-- /.home-showcase__inner -->
+
+                                                        </div><!-- /.container -->
+                                                    </section>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/">About </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Services </a>
+                                            <ul>
+                                                <li><a href="/">Services 01</a></li>
+                                                <li><a href="/">Services 02</a></li>
+                                                <li><a href="/">Services 03</a></li>
+                                                <li><a href="/">Services Carousel</a></li>
+                                                <li><a href="/">Plumbing Services</a></li>
+                                                <li><a href="/">Laundry Services</a></li>
+                                                <li><a href="/">Kitchen Cleaning</a></li>
+                                                <li><a href="/">Window Cleaning</a></li>
+                                                <li><a href="/">Office Cleaning</a></li>
+                                                <li><a href="/">Toilet Cleaning</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Pages </a>
+                                            <ul>
+                                                <li><a href="/">Team</a></li>
+                                                <li><a href="/">Team Carousel</a></li>
+                                                <li><a href="/">Team Details</a></li>
+                                                <li><a href="/">Testimonials</a></li>
+                                                <li><a href="/">Testimonials Carousel</a>
+                                                </li>
+                                                <li><a href="/">Gallery</a></li>
+                                                <li><a href="/">Gallery Carousel</a></li>
+                                                <li><a href="/">FAQs</a></li>
+                                                <li><a href="/">404 Error</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Portfolio</a>
+                                            <ul>
+                                                <li><a href="/">Portfolio</a></li>
+                                                <li><a href="/">Portfolio Carousel</a></li>
+                                                <li><a href="/">Portfolio Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="/">Blog</a>
+                                            <ul>
+                                                <li><a href="/">Blog</a></li>
+                                                <li><a href="/">Blog Carousel</a></li>
+                                                <li><a href="/">Blog Sidebar</a></li>
+                                                <li><a href="/">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Contact </a>
+                                            <ul>
+                                                <li><a href="/">Contact 01</a></li>
+                                                <li><a href="/">Contact 02</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-menu__right">
+                                <div class="main-menu__search-box">
+                                    <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        {% include 'main/parts/info.html.twig' %}
+
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer-shape-1"
+                 style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
+            </div>
+            <div class="site-footer-shape-two hidden">
+                <img src="assets/images/shapes/site-footer-shape-2.png" alt="">
+            </div>
+            <div class="site-footer__top hidden">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <h3 class="footer-widget__title">Explore</h3>
+                                <div class="footer-widget__about-text-box">
+                                    <p class="footer-widget__about-text">Tincidunt elit magnis nulla facilisis sagittis
+                                        maecenas. Sapien nunced amet dolores.</p>
+                                </div>
+                                <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__column footer-widget__links clearfix">
+                                <h3 class="footer-widget__title">Links</h3>
+                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                    <li><a href="/">About</a></li>
+                                    <li><a href="/">Meet Our Team</a></li>
+                                    <li><a href="/">What We Do</a></li>
+                                    <li><a href="/">Our Pricing</a></li>
+                                    <li><a href="/">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__articles clearfix">
+                                <h3 class="footer-widget__title">Articles</h3>
+                                <ul class="footer-widget__articles-list list-unstyled clearfix">
+                                    <li>
+                                        <div class="footer-widget__articles-img">
+                                            <img src="assets/images/resources/footer-widget-articles-img-1.jpg" alt="">
+                                            <a href="/"><span class="fa fa-link"></span></a>
+                                        </div>
+                                        <div class="footer-widget__articles-content">
+                                            <p class="footer-widget__articles-date">26 Jan, 2022</p>
+                                            <h5 class="footer-widget__articles-sub-title"><a href="/">6
+                                                    Cleaning Hacks
+                                                    that will Blow your Mind!</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-widget__articles-img">
+                                            <img src="assets/images/resources/footer-widget-articles-img-2.jpg" alt="">
+                                            <a href="/"><span class="fa fa-link"></span></a>
+                                        </div>
+                                        <div class="footer-widget__articles-content">
+                                            <p class="footer-widget__articles-date">26 Jan, 2022</p>
+                                            <h5 class="footer-widget__articles-sub-title"><a href="/">6
+                                                    Cleaning Hacks
+                                                    that will Blow your Mind!</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__newsletter">
+                                <h3 class="footer-widget__title">Newsletter</h3>
+                                <p class="footer-widget__newsletter-text">Subscribe our newsletter to get <br> our
+                                    latest update & news</p>
+                                <form class="footer-widget__newsletter-form">
+                                    <div class="footer-widget__newsletter-input-box">
+                                        <input type="email" placeholder="Email address" name="email">
+                                        <button type="submit" class="footer-widget__newsletter-btn"><i
+                                                    class="far fa-paper-plane"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner mt-5">
+                                <p class="site-footer__bottom-text">Разработчик: <a href="mailto:droden@yandex.ru"><i class="fa fa-envelope"></i> Денис Дроздецкий</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="/" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="89"
+                                                                  alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:easvarich@gmail.com">easvarich@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+79067743932">+7(906)774-3932</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+{% block body  %}
+{% endblock %}
+    <script src="assets/custom/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/custom/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/custom/jarallax/jarallax.min.js"></script>
+    <script src="assets/custom/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/custom/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/custom/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/custom/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/custom/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/custom/nouislider/nouislider.min.js"></script>
+    <script src="assets/custom/odometer/odometer.min.js"></script>
+    <script src="assets/custom/swiper/swiper.min.js"></script>
+    <script src="assets/custom/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/custom/wnumb/wNumb.min.js"></script>
+    <script src="assets/custom/wow/wow.js"></script>
+    <script src="assets/custom/isotope/isotope.js"></script>
+    <script src="assets/custom/countdown/countdown.min.js"></script>
+    <script src="assets/custom/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/custom/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/custom/vegas/vegas.min.js"></script>
+    <script src="assets/custom/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/custom/timepicker/timePicker.js"></script>
+    <script src="assets/custom/circleType/jquery.circleType.js"></script>
+    <script src="assets/custom/circleType/jquery.lettering.min.js"></script>
+
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/brote.js"></script>
+
