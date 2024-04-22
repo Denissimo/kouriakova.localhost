@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{#{% block title %}Hello ++ MainController!{% endblock %}#}
+{% block title %}Hello ++ MainController!{% endblock %}
+
+{% block body  %}
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
-
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
@@ -245,8 +246,8 @@
         <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-
-        {% include 'main/parts/info.html.twig' %}
+        main-slider
+        {% block content %}{% endblock %}
 
         <!--Site Footer Start-->
         <footer class="site-footer">
@@ -361,7 +362,7 @@
 
             <div class="logo-box">
                 <a href="/" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="89"
-                                                                  alt="" /></a>
+                                                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -410,8 +411,8 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-{% block body  %}
-{% endblock %}
+
+
     <script src="assets/custom/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/custom/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/custom/jarallax/jarallax.min.js"></script>
@@ -438,9 +439,6 @@
     <script src="assets/custom/circleType/jquery.lettering.min.js"></script>
 
 
-
-
-
     <!-- template js -->
     <script src="assets/js/brote.js"></script>
-
+{% endblock %}
