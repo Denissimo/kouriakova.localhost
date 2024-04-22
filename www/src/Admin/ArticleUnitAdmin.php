@@ -16,6 +16,7 @@ class ArticleUnitAdmin extends AbstractAdmin
     {
         $form->add('path');
         $form->add('title');
+        $form->add('image');
         $form->add('annotation');
         $form->add('seo_title');
         $form->add('seo_h1');
@@ -34,6 +35,7 @@ class ArticleUnitAdmin extends AbstractAdmin
         $list->addIdentifier('id')
             ->addIdentifier('path')
             ->addIdentifier('title')
+            ->addIdentifier('image')
             ->addIdentifier('created_at')
             ->addIdentifier('updated_at')
             ->addIdentifier(ListMapper::NAME_ACTIONS, null, [
@@ -48,6 +50,7 @@ class ArticleUnitAdmin extends AbstractAdmin
         $show->add('id');
         $show->add('path');
         $show->add('title');
+        $show->add('image');
         $show->add('annotation');
         $show->add('seo_title');
         $show->add('seo_h1');

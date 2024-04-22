@@ -24,6 +24,9 @@ class ArticleUnit
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $title = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $image = null;
+
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $annotation = null;
 
@@ -84,6 +87,22 @@ class ArticleUnit
         $this->title = $title;
 
         return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string|null $image
+     */
+    public function setImage(?string $image): void
+    {
+        $this->image = $image;
     }
 
     public function getAnnotation(): ?string

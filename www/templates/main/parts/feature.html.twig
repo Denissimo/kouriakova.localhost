@@ -1,77 +1,34 @@
 <!--Feature One Start-->
 <section class="feature-one">
-    <div class="container">
+    <div class="container" id="features_list">
         <div class="row">
-            <!--Feature One single Start-->
-            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                <div class="feature-one__single">
-                    <div class="feature-one-single-bg"
-                         style="background-image: url(/assets/images/backgrounds/feature-one-single-bg.jpg);">
-                    </div>
-                    <div class="feature-one__icon">
-                        <img src="/assets/images/icon/feature-one-icon-1.png" alt="">
-                        <div class="feature-one__icon-shape">
-                            <img src="/assets/images/shapes/feature-one-icon-shape.png" alt="">
+            {% set article_counter = 0 %}
+            {% for article in articles  %}
+                {% set article_counter = article_counter + 1 %}
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="{{ article_counter }}00ms">
+                    <div class="feature-one__single">
+                        <div class="feature-one-single-bg"
+                             style="background-image: url(/assets/images/backgrounds/feature-one-single-bg.jpg);">
+                        </div>
+                        <div class="feature-one__icon">
+                            <img src="{{ article.image }}" alt="">
+                            <div class="feature-one__icon-shape">
+                                <img src="/assets/images/shapes/feature-one-icon-shape.png" alt="">
+                            </div>
+                        </div>
+                        <div class="feature-one__title-box">
+                            <div class="feature-one__title-border"></div>
+                            <h3 class="feature-one__title"><a href="{{ article.path }}">{{ article.title }}</a></h3>
+                        </div>
+                        <p class="feature-one__text">{{ article.annotation|raw }}</p>
+                        <div class="feature-one__btn-box">
+                            <a href="/psychology/{{ article.path }}" class="feature-one__btn">Подробнее</a>
                         </div>
                     </div>
-                    <div class="feature-one__title-box">
-                        <div class="feature-one__title-border"></div>
-                        <h3 class="feature-one__title"><a href="/">Когнитивная психология</a></h3>
-                    </div>
-                    <p class="feature-one__text">Когнитивная психология - это область, которая изучает процессы познания, восприятия, мышления и решения проблем. Она помогает нам понять, как работает наш ум, как мы обрабатываем информацию, принимаем решения и взаимодействуем с окружающим миром.</p>
-                    <div class="feature-one__btn-box">
-                        <a href="/" class="feature-one__btn">Подробнее</a>
-                    </div>
                 </div>
+{#                <li>{{ team.name }} - {{ team.championship }} - {{ team.budget|number_format(2, '.', ',') }}£</li>#}
+            {% endfor  %}
             </div>
-            <!--Feature One single End-->
-            <!--Feature One single Start-->
-            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                <div class="feature-one__single">
-                    <div class="feature-one-single-bg"
-                         style="background-image: url(/assets/images/backgrounds/feature-one-single-bg.jpg);">
-                    </div>
-                    <div class="feature-one__icon">
-                        <img src="/assets/images/icon/feature-one-icon-2.png" alt="">
-                        <div class="feature-one__icon-shape">
-                            <img src="/assets/images/shapes/feature-one-icon-shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="feature-one__title-box">
-                        <div class="feature-one__title-border"></div>
-                        <h3 class="feature-one__title"><a href="/">Эффективная терапия</a></h3>
-                    </div>
-                    <p class="feature-one__text">Психологическая терапия - это мощный инструмент для решения различных проблем и улучшения качества жизни. Работа с профессиональным психологом может принести множество преимуществ и помочь вам обрести гармонию и психологическое благополучие.</p>
-                    <div class="feature-one__btn-box">
-                        <a href="/" class="feature-one__btn">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <!--Feature One single End-->
-            <!--Feature One single Start-->
-            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                <div class="feature-one__single">
-                    <div class="feature-one-single-bg"
-                         style="background-image: url(/assets/images/backgrounds/feature-one-single-bg.jpg);">
-                    </div>
-                    <div class="feature-one__icon">
-                        <img src="/assets/images/icon/feature-one-icon-3.png" alt="">
-                        <div class="feature-one__icon-shape">
-                            <img src="/assets/images/shapes/feature-one-icon-shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="feature-one__title-box">
-                        <div class="feature-one__title-border"></div>
-                        <h3 class="feature-one__title"><a href="/">Новые методы</a></h3>
-                    </div>
-                    <p class="feature-one__text">Современная психология постоянно развивается, предлагая новые терапевтические методы для решения психологических проблем пациентов. Одним из наиболее эффективных подходов является работа с когнитивным психологом</p>
-                    <div class="feature-one__btn-box">
-                        <a href="/" class="feature-one__btn">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <!--Feature One single End-->
-        </div>
     </div>
 </section>
 <!--Feature One End-->
