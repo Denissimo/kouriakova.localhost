@@ -23,10 +23,10 @@ class ArticleUnitRepository extends ServiceEntityRepository
     }
 
     /**
-     * @return ArticleUnit
+     * @return ArticleUnit|null
      * @throws NonUniqueResultException
      */
-    public function findByPath(string $path): ArticleUnit
+    public function findByPath(string $path): ?ArticleUnit
     {
         return $this->createQueryBuilder('a')
             ->andWhere('a.path = :val')
