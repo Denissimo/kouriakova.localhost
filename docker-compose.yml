@@ -19,7 +19,7 @@ services:
     container_name: kouriakova_nginx
     hostname: kouriakova_nginx
     # используем последний стабильный образ nginx
-    image: nginx:latest
+    image: nginx:1.22.1-alpine
     depends_on:
       - php
     #    ports:
@@ -47,20 +47,48 @@ services:
       - PHP_IDE_CONFIG=serverName=kouriakova
       - PHP_INI_SCAN_DIR=/usr/local/etc/php/custom.d:/usr/local/etc/php/conf.d
     depends_on:
-      - postgresql
+      - mysql
     networks:
       - default
-  postgresql:
-    image: 'bitnami/postgresql:latest'
-    container_name: kouriakova_postgres
+#  postgresql:
+#    image: 'bitnami/postgresql:latest'
+#    container_name: kouriakova_postgres
+#    environment:
+#      - POSTGRESQL_USERNAME=kouriakova
+#      - POSTGRESQL_PASSWORD=kouriakova
+#      - POSTGRESQL_DATABASE=kouriakova_db
+#    ports:
+#      - 5533:5432
+#    volumes:
+#      - /var/lib/postgresql/data
+#    networks:
+#      - default
+##      - dev0
+
+  mysql:
+    container_name: kouriakova_mysql
+    image: mysql:8.0
+    cap_add:
+      - SYS_NICE
+#    restart: always
     environment:
-      - POSTGRESQL_USERNAME=kouriakova
-      - POSTGRESQL_PASSWORD=kouriakova
-      - POSTGRESQL_DATABASE=kouriakova_db
+      - MYSQL_USER=kouriakova
+      - MYSQL_PASSWORD=kouriakova
+      - MYSQL_DATABASE=kouriakova_db
+      - MYSQL_ROOT_PASSWORD=root
     ports:
-      - 5533:5432
+      - '3303:3306'
     volumes:
-      - /var/lib/postgresql/data
+      - /var/lib/mysqld:/var/lib/mysql
     networks:
       - default
-#      - dev0
+volumes:
+  mysql_data:
+    driver: local
+#  adminer:
+#    image: adminer
+#    restart: always
+#    ports:
+#      - 8080:8080
+#    networks:
+#      - default

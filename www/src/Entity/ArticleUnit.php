@@ -7,7 +7,7 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use DateTimeImmutable;
-use Symfony\Component\Uid\UuidV7;
+use Symfony\Component\Uid\Uuid;
 
 #[ORM\Entity(repositoryClass: ArticleUnitRepository::class)]
 class ArticleUnit
@@ -16,7 +16,7 @@ class ArticleUnit
     #[ORM\Column(type: 'uuid', unique: true)]
     #[ORM\GeneratedValue(strategy: 'CUSTOM')]
     #[ORM\CustomIdGenerator(class: 'doctrine.uuid_generator')]
-    private UuidV7 $id;
+    private Uuid $id;
 
     #[ORM\Column(length: 255)]
     private ?string $path = null;
@@ -60,7 +60,7 @@ class ArticleUnit
     }
 
 
-    public function getId(): UuidV7
+    public function getId(): Uuid
     {
         return $this->id;
     }

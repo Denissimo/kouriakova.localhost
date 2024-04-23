@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install pdo_pgsql zip \
+    && docker-php-ext-install pdo_mysql \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug
 
