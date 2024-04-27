@@ -1,0 +1,16 @@
+sonata_user:
+  manager_type: orm # can be orm or mongodb
+#  security_acl: true
+  class:
+    user: App\Entity\User
+
+  resetting:
+    email:
+      address: droden@yandex.ru
+      sender_name: Sonata Admin
+#  mailer: custom.mailer.service.id
+  admin: # Admin Classes
+    user:
+      class: App\Admin\UserAdmin # there define your extended admin class
+      #            controller: SonataUserBundle:UserCURD
+      translation: SonataUserBundle

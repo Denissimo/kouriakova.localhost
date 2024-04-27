@@ -174,11 +174,16 @@
                                         </li>
                                         <li class="dropdown">
                                             <a href="#">Психология </a>
-                                            <ul>
-                                                {% for article in articles  %}
-                                                    <li> <a href="/psychology/{{ article.path }}">{{ article.title }}</a></li>
-                                                {% endfor %}
-                                            </ul>
+                                            {% if articles is defined and articles %}
+                                                <ul>
+                                                    {% for article in articles %}
+                                                        <li>
+                                                            <a href="/psychology/{{ article.path }}">{{ article.title }}</a>
+                                                        </li>
+                                                    {% endfor %}
+
+                                                </ul>
+                                            {% endif %}
                                         </li>
                                         <li>
                                             <a href="/">О нас </a>
